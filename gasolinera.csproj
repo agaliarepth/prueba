@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A334C0F1-017F-4507-A179-AEF867A4FAAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gasolinera</RootNamespace>
+    <AssemblyName>gasolinera</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AdminLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassNumeroLetra.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAsignarHorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAsignarHorarios.designer.cs">
+      <DependentUpon>FormAsignarHorarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBackup.Designer.cs">
+      <DependentUpon>FormBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBombas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBombas.Designer.cs">
+      <DependentUpon>FormBombas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCombustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCombustible.Designer.cs">
+      <DependentUpon>FormCombustible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompraDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompraDetalle.Designer.cs">
+      <DependentUpon>FormCompraDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompras.Designer.cs">
+      <DependentUpon>FormCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCompras2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCompras2.Designer.cs">
+      <DependentUpon>FormCompras2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfiguracion.Designer.cs">
+      <DependentUpon>FormConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfImpresora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfImpresora.Designer.cs">
+      <DependentUpon>FormConfImpresora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDiseñoFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDiseñoFactura.Designer.cs">
+      <DependentUpon>FormDiseñoFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDistribuidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDistribuidores.Designer.cs">
+      <DependentUpon>FormDistribuidores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinanciero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinanciero.Designer.cs">
+      <DependentUpon>FormFinanciero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFuncionario.Designer.cs">
+      <DependentUpon>FormFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListDistribuidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListDistribuidores.Designer.cs">
+      <DependentUpon>FormListDistribuidores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovimientoComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovimientoComp.Designer.cs">
+      <DependentUpon>FormMovimientoComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovimientoCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovimientoCompras.Designer.cs">
+      <DependentUpon>FormMovimientoCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovimientoVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovimientoVentas.Designer.cs">
+      <DependentUpon>FormMovimientoVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPorBomba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPorBomba.designer.cs">
+      <DependentUpon>FormPorBomba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPorDistri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPorDistri.designer.cs">
+      <DependentUpon>FormPorDistri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPorEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPorEmpleado.designer.cs">
+      <DependentUpon>FormPorEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPorTanque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPorTanque.designer.cs">
+      <DependentUpon>FormPorTanque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrarPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrarPagos.designer.cs">
+      <DependentUpon>FormRegistrarPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistro.designer.cs">
+      <DependentUpon>FormRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistroBomba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroBomba.designer.cs">
+      <DependentUpon>FormRegistroBomba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroCliente.designer.cs">
+      <DependentUpon>FormRegistroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistroCombustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroCombustible.designer.cs">
+      <DependentUpon>FormRegistroCombustible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistroDistribuidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroDistribuidores.designer.cs">
+      <DependentUpon>FormRegistroDistribuidores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroFuncionario.designer.cs">
+      <DependentUpon>FormRegistroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistroTanque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroTanque.designer.cs">
+      <DependentUpon>FormRegistroTanque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistroTurnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistroTurnos.designer.cs">
+      <DependentUpon>FormRegistroTurnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRestaurarDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRestaurarDataBase.designer.cs">
+      <DependentUpon>FormRestaurarDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSueldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSueldos.designer.cs">
+      <DependentUpon>FormSueldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTanque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanque.designer.cs">
+      <DependentUpon>FormTanque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTurnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTurnos.designer.cs">
+      <DependentUpon>FormTurnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gasolineraDBDataSet.cs">
+      <DependentUpon>gasolineraDBDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gasolineraDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gasolineraDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gasolineraVistas.cs">
+      <DependentUpon>gasolineraVistas.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gasolineraVistas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gasolineraVistas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\ClientesReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ClientesReportForm.Designer.cs">
+      <DependentUpon>ClientesReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CoprasReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\CoprasReport.Designer.cs">
+      <DependentUpon>CoprasReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DistribuidoresReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\DistribuidoresReportForm.designer.cs">
+      <DependentUpon>DistribuidoresReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FinancioeroReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FinancioeroReportForm.designer.cs">
+      <DependentUpon>FinancioeroReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportPagoSueldoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportPagoSueldoForm.Designer.cs">
+      <DependentUpon>ReportPagoSueldoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VentasFiltradasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VentasFiltradasForm.designer.cs">
+      <DependentUpon>VentasFiltradasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VentasReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\VentasReportForm.designer.cs">
+      <DependentUpon>VentasReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAsignarHorarios.resx">
+      <DependentUpon>FormAsignarHorarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBackup.resx">
+      <DependentUpon>FormBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBombas.resx">
+      <DependentUpon>FormBombas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCombustible.resx">
+      <DependentUpon>FormCombustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompraDetalle.resx">
+      <DependentUpon>FormCompraDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompras.resx">
+      <DependentUpon>FormCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCompras2.resx">
+      <DependentUpon>FormCompras2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguracion.resx">
+      <DependentUpon>FormConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfImpresora.resx">
+      <DependentUpon>FormConfImpresora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDiseñoFactura.resx">
+      <DependentUpon>FormDiseñoFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDistribuidores.resx">
+      <DependentUpon>FormDistribuidores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinanciero.resx">
+      <DependentUpon>FormFinanciero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFuncionario.resx">
+      <DependentUpon>FormFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListDistribuidores.resx">
+      <DependentUpon>FormListDistribuidores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovimientoComp.resx">
+      <DependentUpon>FormMovimientoComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovimientoCompras.resx">
+      <DependentUpon>FormMovimientoCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovimientoVentas.resx">
+      <DependentUpon>FormMovimientoVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPorBomba.resx">
+      <DependentUpon>FormPorBomba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPorDistri.resx">
+      <DependentUpon>FormPorDistri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPorEmpleado.resx">
+      <DependentUpon>FormPorEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPorTanque.resx">
+      <DependentUpon>FormPorTanque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrarPagos.resx">
+      <DependentUpon>FormRegistrarPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroBomba.resx">
+      <DependentUpon>FormRegistroBomba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroCliente.resx">
+      <DependentUpon>FormRegistroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroCombustible.resx">
+      <DependentUpon>FormRegistroCombustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroDistribuidores.resx">
+      <DependentUpon>FormRegistroDistribuidores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroFuncionario.resx">
+      <DependentUpon>FormRegistroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroTanque.resx">
+      <DependentUpon>FormRegistroTanque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistroTurnos.resx">
+      <DependentUpon>FormRegistroTurnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRestaurarDataBase.resx">
+      <DependentUpon>FormRestaurarDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSueldos.resx">
+      <DependentUpon>FormSueldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanque.resx">
+      <DependentUpon>FormTanque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTurnos.resx">
+      <DependentUpon>FormTurnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\ClientesReport.rdlc" />
+    <EmbeddedResource Include="Reportes\ClientesReportForm.resx">
+      <DependentUpon>ClientesReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ComprasDist.rdlc" />
+    <EmbeddedResource Include="Reportes\CoprasReport.resx">
+      <DependentUpon>CoprasReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\DistribuidoresReport.rdlc" />
+    <EmbeddedResource Include="Reportes\DistribuidoresReportForm.resx">
+      <DependentUpon>DistribuidoresReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FinancieroReport.rdlc" />
+    <EmbeddedResource Include="Reportes\FinancioeroReportForm.resx">
+      <DependentUpon>FinancioeroReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportPagoSueldo.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportPagoSueldoForm.resx">
+      <DependentUpon>ReportPagoSueldoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ventasBomba.rdlc" />
+    <EmbeddedResource Include="Reportes\VentasFiltradasForm.resx">
+      <DependentUpon>VentasFiltradasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VentasFiltradasReport.rdlc" />
+    <EmbeddedResource Include="Reportes\VentasReportForm.resx">
+      <DependentUpon>VentasReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gasolineraDBDataSet.xsc">
+      <DependentUpon>gasolineraDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gasolineraDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gasolineraDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gasolineraDBDataSet.xss">
+      <DependentUpon>gasolineraDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gasolineraVistas.xsc">
+      <DependentUpon>gasolineraVistas.xsd</DependentUpon>
+    </None>
+    <None Include="gasolineraVistas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gasolineraVistas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gasolineraVistas.xss">
+      <DependentUpon>gasolineraVistas.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanq1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emp_bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bonbas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comb_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1psd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kcmx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_database_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbplus21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_upload_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty_user.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\provee_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminLogo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
